@@ -61,6 +61,50 @@
             </div>
         </div>
     </header>
+    <section class="flex justify-between items-center py-10 w-11/12 mx-auto">
+        <div class="content flex-1">
+            <h1 class="font-bold text-4xl mb-6"><span class="text-[#00BCFF]">English</span> is Easy!!</h1>
+            <p class="font-bangla mb-6 text-[#18181B] font-medium">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+            <div class="flex flex-col gap-4 w-ful mb-4">
+                <input type="text" placeholder="Enter your name" class="input input-md" />
+                <input type="password" placeholder="......" class="input input-md" />
+            </div>
+            <button class="btn btn-primary">Get Started</button>
+        </div>
+
+        <div class="image">
+            <img src="./assets/hero-student.png" alt="">
+        </div>
+    </section>
+    <section>
+        <h2 class="font-bold text-[36px] text-center mb-6"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h2>
+        <div id="level-container" class="flex justify-center flex-wrap gap-5">
+        </div>
+    </section>
+    <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5">
+        <div class="text-center bg-sky-100 col-span-full rounded-xl py-10 space-y-6">
+            <img class="mx-auto" src="./assets/alert-error.png" alt="">
+            <p class="text-xl">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+            <h2 class="font-bold text-3xl">নেক্সট Lesson এ যান</h2>
+        </div>
+    </section>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+       <div id="details-container" class="space-y-5">
+            
+       </div>
+        <div class="modal-action">
+        <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+        </form>
+        </div>
+    </div>
+    </dialog>
+
     <script src="./script/index.js"></script>
 </body>
 
